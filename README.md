@@ -1,16 +1,19 @@
 # BotStatus
 Updates your bot status in the message, every two hours.
 
-**_NOTE:_** This branch needs to be hosted to work. If you prefer to host on GitHub WorkFlows, visit [the other branch](https://github.com/btwRagdoll/BotStatus/tree/gh-wf).
+**_NOTE:_** This branch uses github workflows to host your code, and doesn't rely on another hosting platform. If you want to deploy on heroku/vps/whereever, go to [this branch](https://github.com/btwRagdoll/BotStatus/tree/deploy).
 
-# Variables.
+# Secrets.
+
+Add them to [Settings ⇢ Secrets ⇢ New Repository Secret.](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
 - `APP_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org).
 - `BOTS` - TG UserName of your bots separated by space.
-- `SESSION` - Telethon Session String of the User to edit the message.
+- `SESSION` - Telethon SessionString of the User to edit the message.
+- `REPO_NAME` - yourGitHubUserName/RepositoryName, eg: btwRagdoll/BotStatus (fork this repo first).
 - `CHANNEL_ID` - ID of your channel.
 - `MESSAGE_ID` - ID of the message to edit.
 
-Fill these in a `.env` file, if hosting on a VPS.
-
-[![Deploy To Heroku](https://img.shields.io/badge/Deploy%20To%20Heroku-orange?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/btwRagdoll/BotStatus)
+Optional Variables:
+- `CHANNEL_NAME` - Your channel name, with @, eg: `@cuxus`
+- `TIME_ZONE` - Asia/Kolkata
