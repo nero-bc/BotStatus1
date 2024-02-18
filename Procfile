@@ -1,0 +1,1 @@
+cuxus: python bot.py

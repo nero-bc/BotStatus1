@@ -7,7 +7,7 @@ Updates your bot status in the message, every two hours.
 
 - `APP_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org).
 - `BOTS` - TG UserName of your bots separated by space.
-- `SESSION` - Telethon SessionString of the User to edit the message.
+- `SESSION` - Telethon Session String of the User to edit the message.
 - `CHANNEL_ID` - ID of your channel.
 - `MESSAGE_ID` - ID of the message to edit.
 
